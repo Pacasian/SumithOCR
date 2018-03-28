@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/namebtn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#fff"
+            android:hint="Name"
+            android:padding="6dp"/>
+
+        <EditText
+            android:id="@+id/emailbtn1"
+            android:inputType="textEmailAddress"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namebtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#fff"
+            android:hint="Email"
+            android:padding="6dp" />
+
+        <EditText
+            android:id="@+id/mobilebtn"
+            android:layout_width="350dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailbtn1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#fff"
+            android:hint="Mobile Number" />
+
+        <EditText
+            android:id="@+id/passbtn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mobilebtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#fff"
+            android:hint="Password" />
+        <EditText
+            android:id="@+id/confirm_passbtn"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:inputType="textPassword"
+            android:background="@drawable/bg_button"
+            android:backgroundTint="#fff"
+            android:hint="Confirm Password" />
+
+        <TextView
+            android:id="@+id/hai"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confirm_passbtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="      Age.."
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/hai">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Day"/>
+        <Spinner
+            android:id="@+id/dayspin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hai" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/monthspin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yearspin"/>
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="35dp"
+    android:layout_above="@+id/button"
+    android:layout_alignParentEnd="true">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/acceptcheck"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accept"
+        android:textStyle="bold"/>
+</LinearLayout>
+<Button
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="23dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignEnd="@+id/confirm_passbtn"
+    android:layout_alignStart="@+id/confirm_passbtn"
+    android:background="@drawable/bg_button"
+    android:text="SignUp"
+    android:textStyle="italic"
+    android:id="@+id/button" />
+    </RelativeLayout>
+</LinearLayout>
